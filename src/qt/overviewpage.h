@@ -84,6 +84,7 @@ private Q_SLOTS:
     void on_pushButton_Telegram_clicked();
     void on_pushButton_Twitter_clicked();
     void on_pushButton_Explorer_clicked();
+	void on_pushButton_Btctalk_clicked();
 };
 
 #endif // BITCOIN_QT_OVERVIEWPAGE_H

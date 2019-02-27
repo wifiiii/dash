@@ -8,6 +8,7 @@
 		<file alias="telegram">res/icons/telegram.png</file>
 		<file alias="explorer">res/icons/explorer.png</file>
 		<file alias="twitter">res/icons/twitter.png</file>
+		<file alias="btctalk">res/icons/btctalk.png</file>
     </qresource>
     <qresource prefix="/icons/drkblue">
         <file alias="address-book">res/icons/drkblue/address-book.png</file>

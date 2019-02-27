@@ -146,7 +146,7 @@ OverviewPage::OverviewPage(const PlatformStyle *platformStyle, QWidget *parent) 
 	ui->pushButton_Telegram->setStatusTip(tr("Sinovate Telegram Channel"));
 	ui->pushButton_Twitter->setStatusTip(tr("Sinovate Twitter Channel"));
 	ui->pushButton_Explorer->setStatusTip(tr("Sinovate Block Explorer"));
-   
+	ui->pushButton_Btctalk->setStatusTip(tr("Btctalk"));
    // Recent transactions
     ui->listTransactions->setItemDelegate(txdelegate);
     ui->listTransactions->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
@@ -696,4 +696,10 @@ void OverviewPage::on_pushButton_Twitter_clicked() {
 
 void OverviewPage::on_pushButton_Explorer_clicked() {
     QDesktopServices::openUrl(QUrl("http://suqaexplorer.com", QUrl::TolerantMode));
+
+}
+
+void OverviewPage::on_pushButton_Btctalk_clicked() {
+    QDesktopServices::openUrl(QUrl("https://bitcointalk.org/index.php?topic=5038269.0", QUrl::TolerantMode));
+	
 }
