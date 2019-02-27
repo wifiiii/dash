@@ -20,3 +20,18 @@ QDialog#SendCoinsDialog QLabel#labelBalance {
 margin-left:0px;
 padding-left:0px;
 }
+QPushButton#pushButton_Website {
+background-color:transparent;
+}
+QPushButton#pushButton_Discord {
+background-color:transparent;
+}
+QPushButton#pushButton_Telegram {
+background-color:transparent;
+}
+QPushButton#pushButton_Twitter {
+background-color:transparent;
+}
+QPushButton#pushButton_Explorer {
+background-color:transparent;
+}

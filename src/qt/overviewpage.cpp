@@ -26,6 +26,9 @@
 #include <QPainter>
 #include <QSettings>
 #include <QTimer>
+#include <QString>
+#include <QUrl>
+#include <QDesktopServices>
 
 #define ICON_OFFSET 16
 #define DECORATION_SIZE 54
@@ -137,7 +140,14 @@ OverviewPage::OverviewPage(const PlatformStyle *platformStyle, QWidget *parent) 
     ui->setupUi(this);
     QString theme = GUIUtil::getThemeName();
 
-    // Recent transactions
+	//ui->pushButton_Website->setIcon(QIcon(GUIUtil::getThemeImage(":/icons/website")));
+    ui->pushButton_Website->setStatusTip(tr("Sinovate Website"));
+	ui->pushButton_Discord->setStatusTip(tr("Sinovate Discord Channel"));
+	ui->pushButton_Telegram->setStatusTip(tr("Sinovate Telegram Channel"));
+	ui->pushButton_Twitter->setStatusTip(tr("Sinovate Twitter Channel"));
+	ui->pushButton_Explorer->setStatusTip(tr("Sinovate Block Explorer"));
+   
+   // Recent transactions
     ui->listTransactions->setItemDelegate(txdelegate);
     ui->listTransactions->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
     // Note: minimum height of listTransactions will be set later in updateAdvancedPSUI() to reflect actual settings
@@ -669,4 +679,21 @@ void OverviewPage::DisablePrivateSendCompletely() {
         ui->labelPrivateSendEnabled->setText("<span style='color:red;'>(" + tr("Disabled") + ")</span>");
     }
     privateSendClient.fEnablePrivateSend = false;
+}
+
+void OverviewPage::on_pushButton_Website_clicked() {
+    QDesktopServices::openUrl(QUrl("https://suqa.org/", QUrl::TolerantMode));
+}
+void OverviewPage::on_pushButton_Discord_clicked() {
+    QDesktopServices::openUrl(QUrl("https://discord.gg/qrtU7Y9", QUrl::TolerantMode));
+}
+void OverviewPage::on_pushButton_Telegram_clicked() {
+    QDesktopServices::openUrl(QUrl("https://t.me//Suqafoundation", QUrl::TolerantMode));
+}
+void OverviewPage::on_pushButton_Twitter_clicked() {
+    QDesktopServices::openUrl(QUrl("https://twitter.com/SUQAfoundation", QUrl::TolerantMode));
+}
+
+void OverviewPage::on_pushButton_Explorer_clicked() {
+    QDesktopServices::openUrl(QUrl("http://suqaexplorer.com", QUrl::TolerantMode));
 }

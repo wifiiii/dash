@@ -1657,3 +1657,19 @@ border:1px solid #d7d7d7;
 }
 
 
+
+QPushButton#pushButton_Website {
+background-color:transparent;
+}
+QPushButton#pushButton_Discord {
+background-color:transparent;
+}
+QPushButton#pushButton_Telegram {
+background-color:transparent;
+}
+QPushButton#pushButton_Twitter {
+background-color:transparent;
+}
+QPushButton#pushButton_Explorer {
+background-color:transparent;
+}

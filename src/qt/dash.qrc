@@ -3,6 +3,11 @@
         <file alias="bitcoin">res/icons/bitcoin.png</file>
         <file alias="prompticon">res/icons/chevron.png</file>
         <file alias="warning">res/icons/warning.png</file>
+		<file alias="website">res/icons/website.png</file>
+		<file alias="discord">res/icons/discord.png</file>
+		<file alias="telegram">res/icons/telegram.png</file>
+		<file alias="explorer">res/icons/explorer.png</file>
+		<file alias="twitter">res/icons/twitter.png</file>
     </qresource>
     <qresource prefix="/icons/drkblue">
         <file alias="address-book">res/icons/drkblue/address-book.png</file>
